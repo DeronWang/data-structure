@@ -38,10 +38,13 @@
  *  +END_EXAMPLE
  *
  * @issue
+ *
  *  1.该程序主要通过递归实现遍历，运行效率相对较低。
  *    如有需要可通过使用栈和队列的方式替换递归遍历。
+ *
  *  2.方法createBitree()仅供使用字符串建立二叉树。
  *    中间使用到cont类，模拟终端字符输入。 
+ * 
  *  3.方法find()可以根据实际需要扩展。
  * 
  * @author wang.delong
@@ -409,7 +412,6 @@ class BiTree {
     private function clearNode() {
 	$this->node = null;
     }
-
 
     public function __destruct() {
 	$this->destroyBiTree();
